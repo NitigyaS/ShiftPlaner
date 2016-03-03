@@ -1,0 +1,60 @@
+ROASTER.PL
+
+GOAL OF THE SCRIPT :-
+	To generate and validate a shift calendar for the following purposes.
+	i) Employees can view their shift plans.
+	ii) Employees can also ask for a leave according to their plans.
+	iii) The appropriate authority can validate if the leave can be granted at the said date and if yes grant so.
+	
+
+USE CASES :-
+	CLI for planner.
+	Basic commands:
+	 -c, --nocolor		no color in display
+		This option will display the shift calendar without using any distinguishing colours.
+		You will get the calendar in the B&W mode.
+		By default the calendar will be providing you the colours.
+
+	 -d, --display          toggle display , 1(weekly)(default) or 2(monthly)
+		This option mandatory requires you to passed a numeric arguement limited by 1 or 2.
+		Arguement "1" provides us the weekly calendar. You will get the calendar week wise from the starting date to ending date you specified.
+		Arguement "1" is default.
+
+		Arguement "2" provides us the monthly calendar vertically providing the calendar from the starting date to the ending date specified by you.
+ 
+	 -s, --start="STRING"	start date 
+		This option is used to provide the start date from which you wants to display the calendar.
+		By default it will took today's date as the start date and it must be earlier than the end date.
+
+	 -e, --end		end date
+		This option is used to provide the end date till which the calendar is to be displayed.
+		By default it will take the sunday from the start date as the end date.
+		It must be later than the start date.
+
+	 -f, --filename  	having an employee file with single name at each line
+		This option is used for mapping the employee names with the particular columns or rows accordingly so as to display the calendar.
+
+	 -h, --help 		display this help and exit
+		This option will generate the help describing all the options provided for the planner and how they all are to be used.
+
+	 -l, --leave 		assign leaves , cannot be used with -s and -e
+		This option is used
+
+	 -n, --number 		number of employees , compulsary required
+		This is the mandatory option which is used to specify the number of employees for which the calendar is to be generated.
+
+	 -o, --names 		names of employees on command line
+
+Technology Used: 1) Script is written in perl.
+                 2) MySql is used for database.
+
+Procedure :  
+
+
+SALIENT FEATURES :-
+	Apart from the basic functionalities  the script contains  some other  functionalties:
+
+	1) The User is provided with two different views  to view the calendar. He can do so by providing the appropriate option.
+ 
+        2) Map can be viewed  with colours or without colours.
+	
